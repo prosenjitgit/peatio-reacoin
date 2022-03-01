@@ -1,0 +1,114 @@
+PATH
+  remote: .
+  specs:
+    peatio-rea (0.1.0)
+      activesupport (~> 5.2.3)
+      better-faraday (~> 1.0.5)
+      faraday (~> 0.15.4)
+      memoist (~> 0.16.0)
+      peatio (~> 0.6.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activemodel (5.2.6.2)
+      activesupport (= 5.2.6.2)
+    activesupport (5.2.6.2)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 0.7, < 2)
+      minitest (~> 5.1)
+      tzinfo (~> 1.1)
+    addressable (2.8.0)
+      public_suffix (>= 2.0.2, < 5.0)
+    amq-protocol (2.3.2)
+    amqp (1.8.0)
+      amq-protocol (>= 2.2.0)
+      eventmachine
+    better-faraday (1.0.8)
+      activesupport (>= 4.0, < 6.0)
+      faraday (~> 0.12)
+    bunny (2.19.0)
+      amq-protocol (~> 2.3, >= 2.3.1)
+      sorted_set (~> 1, >= 1.0.2)
+    byebug (11.1.3)
+    clamp (1.3.2)
+    coderay (1.1.3)
+    concurrent-ruby (1.1.9)
+    crack (0.4.5)
+      rexml
+    diff-lcs (1.5.0)
+    em-websocket (0.5.3)
+      eventmachine (>= 0.12.9)
+      http_parser.rb (~> 0)
+    eventmachine (1.2.7)
+    faraday (0.15.4)
+      multipart-post (>= 1.2, < 3)
+    hashdiff (1.0.1)
+    http_parser.rb (0.8.0)
+    i18n (1.10.0)
+      concurrent-ruby (~> 1.0)
+    jwt (2.3.0)
+    memoist (0.16.2)
+    method_source (1.0.0)
+    minitest (5.15.0)
+    mocha (1.13.0)
+    multipart-post (2.1.1)
+    mysql2 (0.5.3)
+    peatio (0.6.3)
+      activemodel (> 5.2, <= 6.0.0)
+      amqp
+      bunny
+      clamp
+      em-websocket
+      eventmachine
+      jwt
+      mysql2
+    pry (0.13.1)
+      coderay (~> 1.1)
+      method_source (~> 1.0)
+    pry-byebug (3.9.0)
+      byebug (~> 11.0)
+      pry (~> 0.13.0)
+    public_suffix (4.0.6)
+    rake (12.3.3)
+    rbtree (0.4.5)
+    rexml (3.2.5)
+    rspec (3.11.0)
+      rspec-core (~> 3.11.0)
+      rspec-expectations (~> 3.11.0)
+      rspec-mocks (~> 3.11.0)
+    rspec-core (3.11.0)
+      rspec-support (~> 3.11.0)
+    rspec-expectations (3.11.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.11.0)
+    rspec-mocks (3.11.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.11.0)
+    rspec-support (3.11.0)
+    set (1.0.2)
+    sorted_set (1.0.3)
+      rbtree
+      set (~> 1.0)
+    thread_safe (0.3.6)
+    tzinfo (1.2.9)
+      thread_safe (~> 0.1)
+    webmock (3.14.0)
+      addressable (>= 2.8.0)
+      crack (>= 0.3.2)
+      hashdiff (>= 0.4.0, < 2.0.0)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  bundler (~> 2.3.7)
+  mocha (~> 1.8)
+  peatio-rea!
+  pry-byebug
+  rake (~> 12.0)
+  rspec (~> 3.0)
+  webmock (~> 3.5)
+
+BUNDLED WITH
+   2.3.7
